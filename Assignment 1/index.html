@@ -1,12 +1,57 @@
 <!DOCTYPE HTML>
+
+<!--  To my peer graders:
+      The guidelines say that we can put whatever text we want in the sections
+      and titles.  I know that the mockup depicts a menu but given that we
+      can put any text content we want, I decided to do something a little bit
+      different for this project (I fully expect to have to do an actual menu
+      on the next project and will have to start from scratch but that just
+      means more practice for me).  Instead of filling the content with dummy
+      text, I put in photos of my dogs with descriptions of each of them.
+
+      I'm hoping you won't ding me for this.  I'm still using unique colors and
+      following all of the responsive layout guidelines.  I just wanted to practice
+      with more interesting content elements than just text.  Plus they are some
+      darn cute dogs.
+
+      Thanks,
+      Your fellow learner.
+-->
 <html>
   <head>
     <title>My Dogs</title>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    
+    <!--  titlebox is a box that contains the main header and also resizes
+          according to the device size.
+    -->
+    <div class="titlebox-lg titlebox-md titlebox-sm"><h1>My Dogs</h1></div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="box" id="MAPLE">
+          <h2 id="MAPLE-TITLE">Maple Sugar</h2>
+          <img src="images/Maple.jpeg">
+          <p>Maple Sugar is the oldest.  She is introverted but friendly toward people.  She can be a little bit snippy with other dogs who invade her personal space and is protective of her pack.  She is also very mannerly and respectful.  I call her "The Goodest Girl".
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="box" id="OAKIE">
+          <h2 id="OAKIE-TITLE">Oakie</h2>
+          <img src="images/Oakie.jpeg">
+          <p>Oakie is the "middle child".  She is very affectionate but neurotic.  She barks at strangers (and neighbors, and sometimes at inanimate objects that worry her) but switches to wags and licks if they ignore her scary posturing and greet her with happy sounds.  Oakie isn't as keen to follow rules as Maple but she groans with happiness whenever she is made over.  She also has panic attacks whenever anybody sneezes.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <div class="box" id="CABOOSE">
+          <h2 id="CABOOSE-TITLE">Caboose</h2>
+          <img src="images/Caboose.jpeg">
+          <p>Caboose is the youngest and the only male.  He is happy-go-lucky and thinks everyone is his best friend.  He is extremely bull-headed and doesn't tend to be in tune with what people around him want and will single-mindedly pursue whatever goal his attention is currently fixated on.  He loves attention and often pushes Oakie out of the way if she is getting pets.  He loves to cuddle.</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
