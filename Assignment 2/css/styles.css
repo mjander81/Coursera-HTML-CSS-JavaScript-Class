@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 15px;
+  margin: 0px;
+}
+
+body {
+  background-color: #DD6;
+  color: green;
+}
+
+img {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+
+h3 {
+  margin: 10px 0px;
+}
+
+#loc-navbar-id {
+  background-color: green;
+  border-radius: 0;
+  border: 2px solid black;
+}
+
+#loc-brand-txt h1 {
+  text-decoration: none;
+  text-shadow: 1px 1px #720;
+  font-size: 26px;
+  color: #DD6;
+  margin: 0px;
+}
+
+#loc-brand-txt a:hover {
+  text-decoration: none;
+}
+
+.loc-navbar-container {
+  margin: 0px;
+  padding: 0px 15px;
+}
+
+.loc-navbar-button {
+  border-top: 2px solid black;
+  text-align: center;
+  margin: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #DD6;
+  text-shadow: 1px 1px #720;
+  font-size: 20px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #DD6;
+}
+
+#loc-nav-menu {
+  width: 100%;
+  background-color: #7A3;
+  margin: 0px;
+}
+
+#loc-collapsable-nav {
+  margin: 0px -15px;
+  padding: 0px;
+  border: none;
+}
+
+#loc-menu-text h2 {
+  text-shadow: 1px 1px darkgreen;
+  font-size: 22px;
+  background-color: inherit;
+}
+
+#loc-navbar-menu-btn {
+  background-color: inherit;
+  margin-right: 15px;
+  border-color: #DD6;
+}
+
+#loc-main-content {
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.loc-description-text {
+  padding: 10px;
+  margin: 0px auto;
+}
+
+.box > .text-center > a {
+  color: #DD6;
+  margin: 5px auto;
+}
+
+.loc-return-link {
+  position: absolute;
+  bottom: 3px;
+}
+
+.box {
+  background-color: green;
+  margin: 0px;
+  margin-bottom: 30px;
+  padding-bottom: 28px;
+  color: #DD6;
+  position: relative;
+}
+
+.col-md-4, .col-sm-6, .col-sm-12, .col-xs-12 {
+  display: flex;
+}

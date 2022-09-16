@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food, LLC</title>
+
+    <!-- Link to the Bootstrap styles distribution -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Link to custom styles page after Bootstrap to ensure our styles override Bootstrap -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav id="loc-navbar-id" class="navbar navbar-default">
+        <div class="container loc-navbar-container">
+          <div class="navbar-header">
+            <div id="loc-brand-txt" class="navbar-brand">
+              <a href="#"><h1>Food, LLC</h1></a>
+            </div>
+
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#loc-collapsable-nav"
+                    aria-expanded="false" id="loc-navbar-menu-btn">
+              <span class="sr-only">Toggle navigation menu</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div id="loc-collapsable-nav" class="collapse navbar-collapse">
+            <ul id="loc-nav-menu" class="nav navbar-nav navbar-center visible-xs">
+              <li class="loc-navbar-button"><a href="#loc-fake-beef"><span>Shroomeat</span></a></li>
+              <li class="loc-navbar-button"><a href="#loc-fake-chicken"><span>Chickanery</span></a></li>
+              <li class="loc-navbar-button"><a href="#loc-fake-sushi"><span>Tofushi</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END NAVBAR -->
+
+    <!-- MAIN CONTENT -->
+    <!--Title-->
+    <div id="loc-menu-text" class="text-center"><h2>Our Plant Based Menu</h2></div>
+    <!--Responsive menu sections-->
+    <!--I had layout issues when trying to use a container to store the row.  There would be
+        large margins on the sides that I couldn't adjust and the responsive divs wouldn't
+        expand to fully fill the available space.  I mimicked my approch from the first
+        assignment (still using bootstrap grid elements tho) and mde the row a flex element
+        instead.
+    -->
+    <section class="row">
+      <div id="loc-fake-beef" class="col-md-4 col-sm-6 col-xs-12">
+        <div class="box">
+          <div class="text-center"><h3>Shroomeat</h3></div>
+          <img src="images/Mushroom400px.jpg" alt="Mushroom Based Beef Alternative">
+          <div class="loc-description-text">
+            <div class="text-center"><h4>Spicy Crispy-Fried Wild Mushroom Sandwich</h4></div>
+            <p>
+              Wild hen-of-the-woods mushroom dipped in spicy batter and deep-fried.  Served
+              with tangy-hot buffalo sauce and ranch dressing on a toasted challah bun with
+              fresh romain lettuce. Spicy!
+            </p>
+          </div>
+          <div class="text-center col-xs-12 visible-sm visible-xs loc-return-link"><a href="#">Top</a></div>
+        </div>
+      </div>
+      <div id="loc-fake-chicken" class="col-md-4 col-sm-6 col-xs-12">
+        <div class="box">
+          <div class="text-center"><h3>Chickanery</h3></div>
+          <img src="images/Tempeh400px.jpg" alt="Tempeh Based Chicken Alternative">
+          <div class="loc-description-text">
+            <div class="text-center"><h4>Tempeh in Honey Bourbon Sauce</h4></div>
+            <p>
+              Pan-fried cultured soybean cake and fresh vegetables tossed in our delicious
+              honey bourbon sauce (made with real Jim Beam bourbon) and served over steamed
+              brown rice.  Medium spiciness.
+            </p>
+          </div>
+          <div class="text-center col-xs-12 visible-sm visible-xs loc-return-link"><a href="#">Top</a></div>
+        </div>
+      </div>
+      <div id="loc-fake-sushi" class="col-md-4 col-sm-12 col-xs-12">
+        <div class="box">
+          <div class="text-center"><h3>Tofushi</h3></div>
+          <div class="col-md-12 col-sm-7 col-xs-12">
+            <img src="images/Rice400px.jpg" alt="Tofu Based Sushi Alternative">
+          </div>
+          <div class="col-md-12 col-sm-5 col-xs-12">
+            <div class="loc-description-text">
+              <div class="text-center"><h4>Smoked Tofu Rice Bowl</h4></div>
+              <p>
+                Marinaded and smoked tofu, roasted sweet corn, avocado, and tomato blended into
+                a bowl of cilantro-lime wild rice.  Served with pico de gallo and sour cream on
+                the side.
+              </p>
+            </div>
+          </div>
+          <div class="text-center col-xs-12 visible-sm visible-xs loc-return-link"><a href="#">Top</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link to Booststrap required Javascript files -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
